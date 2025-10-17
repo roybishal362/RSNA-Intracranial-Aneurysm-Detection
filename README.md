@@ -8,7 +8,7 @@
 A deep learning solution for detecting intracranial aneurysms from medical imaging data (CTA, MRA, MRI). This project achieves a **competition metric of 0.5786** using EfficientNet-B3 with multi-task learning architecture.
 
 ---
-
+Note: This is not the final model.It's just the very first version more optimization and techniques going to apply and make it more efficient. Stay Tune!!!
 ## 📋 Table of Contents
 
 - [Overview](#overview)
@@ -311,50 +311,6 @@ print(f"Top Locations: {predictions.nlargest(3)}")
 python evaluate.py --checkpoint best_model.pth --fold 0
 ```
 
----
-
-## 📁 Project Structure
-
-```
-rsna-aneurysm-detection/
-│
-├── data/
-│   ├── series/                  # DICOM series folders
-│   ├── segmentations/           # Vessel segmentation masks
-│   ├── train.csv                # Training labels
-│   └── train_localizers.csv     # Aneurysm coordinates
-│
-├── models/
-│   ├── __init__.py
-│   ├── efficientnet.py          # EfficientNet backbone
-│   ├── attention.py             # Attention modules
-│   └── aneurysm_model.py        # Complete model architecture
-│
-├── utils/
-│   ├── __init__.py
-│   ├── data_loader.py           # DICOM loading utilities
-│   ├── preprocessing.py         # Medical image preprocessing
-│   ├── augmentation.py          # Augmentation pipeline
-│   └── metrics.py               # Evaluation metrics
-│
-├── notebooks/
-│   ├── 01_eda.ipynb            # Exploratory data analysis
-│   ├── 02_visualization.ipynb   # Image visualization
-│   └── 03_model_analysis.ipynb  # Model interpretation
-│
-├── config/
-│   └── train_config.yaml        # Training configuration
-│
-├── train.py                     # Training script
-├── evaluate.py                  # Evaluation script
-├── inference.py                 # Inference script
-├── requirements.txt             # Dependencies
-├── README.md                    # This file
-└── LICENSE                      # License file
-```
-
----
-
 ## 🔧 Dependencies
 
 ```
@@ -518,10 +474,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-- **GitHub**: [@yourusername](https://github.com/yourusername)
-- **Email**: your.email@example.com
-- **LinkedIn**: [Your Name](https://linkedin.com/in/yourprofile)
-- **Kaggle**: [@yourusername](https://kaggle.com/yourusername)
+- **GitHub**: [@roybishal362](https://github.com/roybishal362)
+- **Email**: roybishal9989@gmail.com
+- **LinkedIn**: [Bishal Roy](https://www.linkedin.com/in/bishal-roy-5410b5257/)
+- **Kaggle**: [@Bishalroy999](https://www.kaggle.com/bishalroy999)
 
 ---
 
